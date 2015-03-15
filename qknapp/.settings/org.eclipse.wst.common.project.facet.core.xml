@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+<<<<<<< .mine
+  <runtime name="com.genuitec.runtime.generic.jee60"/>
+=======
+  <runtime name="Apache Tomcat v7.0"/>
+>>>>>>> .r820
+  <fixed facet="jst.utility"/>
+  <fixed facet="java"/>
+  <installed facet="java" version="1.6"/>
+  <installed facet="jst.utility" version="1.0"/>
+  <installed facet="me.hibernate" version="3.3"/>
+  <installed facet="wst.jsdt.web" version="1.0"/>
+</faceted-project>

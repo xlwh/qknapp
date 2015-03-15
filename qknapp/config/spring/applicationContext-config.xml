@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:c="http://www.springframework.org/schema/c" xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!-- 注意:配置文件以此文件为准，可以新增属性，通过config.properties配置属性，方便修改 -->
+	<bean id="configUtil" class="com.qing.common.util.ConfigUtil">
+		<property name="shareNum">
+			<value>${shareNum}</value>
+		</property>
+		<property name="commentNum">
+			<value>${commentNum}</value>
+		</property>
+		<property name="absUploadPath">
+			<value>${absUploadPath}</value>
+		</property>
+		<property name="resourceContext">
+			<value>${resourceContext}</value>
+		</property>
+		<property name="giftPath">
+			<value>${gift.upload.path}</value>
+		</property>
+		<property name="giftUrl">
+			<value>${gift.url}</value>
+		</property>
+		<property name="token">
+			<value>${token}</value>
+		</property>
+		<property name="appId">
+			<value>${appId}</value>
+		</property>
+		<property name="appSecret">
+			<value>${appSecret}</value>
+		</property>
+		<property name="menuCreateUrl">
+			<value>${menuCreateUrl}</value>
+		</property>
+		<property name="menuDeleteUrl">
+			<value>${menuDeleteUrl}</value>
+		</property>
+		<property name="accessTokenUrl">
+			<value>${accessTokenUrl}</value>
+		</property>
+		<property name="domainName">
+			<value>${domainName}</value>
+		</property>
+	</bean>
+
+</beans>
